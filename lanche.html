@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Burger - Início</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(black, #111);
+            color: white;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            border: 15px solid orange;
+            padding: 20px;
+            position: relative;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: orange;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: white;
+        }
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 64px;
+            color: orange;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 24px;
+            color: #ccc;
+            margin-top: 10px;
+        }
+        /* Estilo dos botões flutuantes */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        .floating-buttons a {
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .floating-buttons a.map {
+            background-color: #ff6600;
+        }
+        .floating-buttons img {
+            width: 35px;
+            height: 35px;
+        }
+        /* Animação ao passar o mouse */
+        .floating-buttons a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="lanche.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre nós</a>
+    </nav>
+
+    <header>
+        <h1>Street Burger</h1>
+        <p>O melhor burger da cidade!</p>
+    </header>
+
+    <!-- Botões Flutuantes -->
+    <div class="floating-buttons">
+        <!-- Botão WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=5511996395832&text=Boa%20noite" target="_blank" title="Fale conosco no WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+        <!-- Botão Mapa -->
+        <a class="map" href="https://www.google.com/maps?q=Rua+8+de+Mai,+417,+Henedina+Cortez,+Bragan%C3%A7a+Paulista,+SP" target="_blank" title="Nosso Endereço">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Mapa">
+        </a>
+    </div>
+
+</body>
+</html>
+

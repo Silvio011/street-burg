@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Burg - Contato</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(black, #111);
+            color: white;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            border: 15px solid orange;
+            padding: 20px;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: orange;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: white;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 48px;
+            color: orange;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff8c00;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #e67300;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="lanche.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre nós</a>
+    </nav>
+
+    <header>
+        <h1>Contato - Street Burg</h1>
+    </header>
+
+    <div class="form-container">
+        <form action="https://usebasin.com/f/c828af9edaef" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
